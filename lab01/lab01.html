@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Laboratorio 01</title>
+    </head>
+    <body>
+        <header>
+            <img src="./tecmty.png"
+            alt="HTML For Babies"
+            height="130"
+            width="150" />
+            <h1>Emiliano Gomez Gonzalez</h1>
+            <h2>Matricula: A01710711</h2>
+            <h2>Correo electronico: a01710711@tec.mx</h2>
+       </header> 
+       <main>
+            <section>
+                <article style="margin-bottom: 40px;">
+                    <h3>Intereses</h3>
+                   <ul id="Intereses">
+                        <li>Cine</li>
+                        <li>Videojuegos</li>
+                        <li>Musica</li>
+                   </ul> 
+                </article>
+                <article>
+                    <h3>Preguntas</h3>
+                        <strong>¿Cuál es la diferencia entre Internet y la World Wide Web?</strong>
+                        <p>
+                            La Web en la World Wide Web no se refiere a una red de computadoras conectadas,
+                            sino a una red de información conectada por hipervínculos. La red vinculada de
+                            computadoras, Internet, es la base sobre la cual se ha construido la Web y dependemos
+                            de Internet para darnos acceso a esa Web y permitirnos agregarla. Sin Internet, no hay
+                            World Wide Web. Dicho esto, la Web es la parte más popular de Internet, por lo que es fácil
+                            ver por qué la persona promedio considera que los términos son sinónimos.
+                        </p>
+                        <h4>Cita:</h4>
+                        <i>¿Cuál es la diferencia entre internet y la world wide web? - Audio 2024. (2024). Icy Science. https://es.theastrologypage.com/what-is-difference-between-internet<br></i>
+                        
+                        <strong>¿Cuáles son las partes de un URL?</strong>
+                        <p>
+                            Las direcciones Web o «URLs» son la base de Internet y una forma sencilla de identificar
+                            y encontrar cualquier cosa que buscamos en la red como páginas web, fotos y videos. URL
+                            es la abreviación de Dirección Web. El formato de una URL esta compuesto por varias partes:
+                            Protocolo, Dominio, Extensión, Recurso y Parámetros.
+                        </p>
+                        <h4>Cita:</h4>
+                        <i>Pérez, M. (2019, November 30). ¿Qué es una Dirección Web o URL? ¿Qué Es Una Dirección Web O URL? https://superadmin.es/blog/que-es/direccion-web-url/<br></i>
+
+                        <strong>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</strong>
+                        <ul>
+                            <li>GET</li>
+                                <p>Solicita una representación del recurso especificado. Solicitudes que usan GET solo debe recuperar datos.</p>
+                            <li>HEAD</li>
+                                <p>Pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.</p>
+                            <li>POST</li>
+                                <p>Se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.</p>
+                            <li>PUT</li>
+                                <p>Reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.</p>
+                            <li>PATCH</li>
+                                <p>Es utilizado para aplicar modificaciones parciales a un recurso.</p>
+                            <li>DELETE</li>
+                                <p>Borra un recurso en específico.</p>
+                        </ul>
+                        <h4>Cita:</h4>
+                        <i>Métodos de petición HTTP - HTTP | MDN. (2023, July 24). MDN Web Docs. https://developer.mozilla.org/es/docs/Web/HTTP/Methods<br></i>
+                        
+                        <strong>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</strong>
+                        <p>
+                            Al enviar un formulario HTML, se debe utilizar el método HTTP GET o POST. La elección entre GET y POST depende
+                            de la naturaleza de los datos que se están enviando. El método GET se utiliza para enviar datos no confidenciales
+                            o para recuperar información del servidor, ya que los datos se envían a través de la URL y son visibles en ella.
+                            Por otro lado, el método POST se emplea para enviar datos confidenciales o archivos, ya que los datos se envían en
+                            el cuerpo de la solicitud y no son visibles en la URL, lo que los hace más seguros. En resumen, se debe usar GET para
+                            datos no confidenciales y POST para datos confidenciales al enviar un formulario HTML
+                        </p>
+                        <h4>Cita:</h4>
+                        <i>Sending form data - Aprende desarrollo web | MDN. (n.d.). MDN Web Docs. https://developer.mozilla.org/es/docs/Learn/Forms/Sending_and_retrieving_form_data<br></i>
+
+                        <strong>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</strong>
+                        <p>
+                            Al escribir la dirección URL en el navegador, este envía una petición GET al servidor para recuperar la página solicitada.
+                            La petición GET es la más común y se utiliza para obtener datos del servidor sin realizar cambios en el estado del
+                            servidor, siendo ideal para solicitudes de lectura de información
+                        </p>
+                        <h4>Cita:</h4>
+                        <i>Equipo editorial de IONOS. (2020, July 15). HTTP Request: los métodos de petición que debes conocer. IONOS Digital Guide. https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/http-request/<br></i>
+
+                        <strong>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</strong>
+                        <p>
+                            Significa que la solicitud ha sido exitosa. En términos simples, el código de respuesta 200 OK indica que la 
+                            página web solicitada se ha cargado correctamente y que el servidor ha respondido de manera satisfactoria a la petición del cliente. 
+                        </p>
+                        <h4>Cita:</h4>
+                        <i>200 OK - HTTP | MDN. (2023, February 23). MDN Web Docs. https://developer.mozilla.org/es/docs/Web/HTTP/Status/200<br></i>
+
+                        <strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</strong>
+                        <p>
+                            Sí, es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio
+                            y se encontró con un error 404. Un error 404 indica que la página solicitada no se encuentra en el servidor, lo que
+                            puede deberse a que la URL está mal escrita, la página ha sido eliminada o movida, entre otras razones. 
+                        </p>
+                        <h4>Cita:</h4>
+                        <i>Canelada, V. (2017, June 3). ᐅ HTTP Error 404 not found: qué es y cómo solucionarlo rápido. https://www.inboundcycle.com/diccionario-marketing-online/error-404<br></i>
+
+                        <strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</strong>
+                        <p>
+                            Si, porque un desarrollador debe corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500.
+                            El error 500, también conocido como "Internal Server Error", indica un problema interno en el servidor que impide mostrar la página solicitada.
+                            Este error puede tener diversas causas, como errores en la configuración del servidor, problemas en el código del sitio web, sobrecarga
+                            del servidor, entre otros. 
+                        </p>
+                        <h4>Cita:</h4>
+                        <i>¿Qué es el error 500 y cómo solucionarlo? (n.d.). https://www.hostgator.mx/blog/que-es-el-error-500/<br></i>
+
+                        <strong>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</strong>
+                        <p>
+                            Cuando un atributo HTML5 está "depreciado" o "desaprobado" (deprecated), significa que su uso se desaconseja 
+                            porque ha sido reemplazado por una alternativa más moderna o porque su uso puede causar problemas de compatibilidad o seguridad
+                        </p>
+                        <p>Ejemplos:</p>
+                        <ol>
+                            <li>font</li>
+                                <p>Utilizado para definir el tamaño, color o fuente del texto</p>
+                            <li>size</li>
+                                <p>Utilizado para especificar el tamaño de la fuente</p>
+                            <li>color</li>
+                                <p>Utilizado para especificar el tamaño de la fuente</p>
+                        </ol>
+                        <h4>Cita:</h4>
+                        <i>Referencia de Elementos HTML - HTML: Lenguaje de etiquetas de hipertexto | MDN. (2023, November 28). MDN Web Docs. https://developer.mozilla.org/es/docs/Web/HTML/Element#elementos_obsoletos_y_en_desuso<br></i>
+
+                        <strong>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</strong>
+                        <p>
+                            HTML5 ofrece ventajas significativas en comparación con HTML4 en términos de compatibilidad con navegadores, nuevas etiquetas, soporte multimedia mejorado, formularios
+                            mejorados y nuevas APIs, lo que lo convierte en una opción más avanzada y versátil para el desarrollo web
+                        </p>
+                        <h4>Cita:</h4>
+                        <i>HTML5 vs. HTML4: ¿Cuál es la diferencia? (n.d.). desarrolladoraweb.com. https://desarrolladoraweb.com/blog/html5-vs-html4-cual-es-la-diferencia<br></i>
+
+                        <strong>¿Qué componentes de estructura y estilo tiene una tabla?</strong>
+                        <p>Componentes de estructura</p>
+                        <ol>
+                            <li>table</li>
+                                <p>Define la estructura principal de la tabla.</p>
+                            <li>caption</li>
+                                <p>Proporciona una leyenda o título para la tabla.</p>
+                            <li>tr</li>
+                                <p>Representa una fila en la tabla.</p>
+                            <li>th</li>
+                                <p>Define una celda de cabecera en una fila.</p>
+                            <li>td</li>
+                                <p>Define una celda de datos en una fila.</p>
+                        </ol>
+                        <p>Componentes de estilo</p>
+                        <ol>
+                            <li>Bordes</li>
+                                <p>Se establecen mediante propiedades de estilo para definir los bordes de la tabla y las celdas.</p>
+                            <li>Colores</li>
+                                <p>Se pueden aplicar estilos de color a la tabla y sus elementos para mejorar la apariencia visual.</p>
+                            <li>Alineación</li>
+                                <p>Permite alinear el contenido de las celdas horizontal y verticalmente</p>
+                        </ol>
+                        <h4>Cita:</h4>
+                        <i>Marco, B. S. (n.d.). Tablas. HTML. Páginas web HTML y hojas de estilo CSS. Bartolomé Sintes Marco. www.mclibre.org. https://www.mclibre.org/consultar/htmlcss/html/html-tablas.html<br></i>
+
+                        <strong>¿Cuáles son los principales controles de una forma HTML5?</strong>
+                        <p>Los principales controles de un formulario HTML5 son:</p>
+                        <ol>
+                            <li>Botón General: input type="button"</li>
+                            <li>Número: input type="number"</li>
+                            <li>Búsqueda: input type="search"</li>
+                            <li>Teléfono: input type="tel"</li>
+                            <li>Dirección Web: input type="url"</li>
+                        </ol>
+                        <h4>Cita:</h4>
+                        <i>Marco, B. S. (n.d.-a). Formularios (1). HTML. Páginas web HTML y hojas de estilo CSS. Bartolomé Sintes Marco. www.mclibre.org. https://www.mclibre.org/consultar/htmlcss/html/html-formularios.html<br></i>
+
+                        <strong>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</strong>
+                        <p>Lamentablemente, no abre el link</p>
+
+                        <strong>
+                            Sobre el ciclo de vida y desarrollo de los sistemas de información:
+                            ¿Cuál es el ciclo de vida de los sistemas de información?
+                            ¿Cuál es el ciclo de desarrollo de sistemas de información?
+                        </strong>
+                        <p>
+                            El ciclo de vida de los sistemas de información es un enfoque por fases del análisis y diseño que sostiene que los sistemas
+                            son desarrollados de mejor manera mediante el uso de un ciclo específico de actividades del analista y del usuario. Por otro lado,
+                            el ciclo de desarrollo de sistemas de información consta de varias etapas, que pueden variar ligeramente según el modelo utilizado,
+                            pero generalmente incluyen: planificación, análisis de requisitos, diseño y prototipo, desarrollo del software, pruebas, lanzamiento
+                            y mantenimiento.
+                        </p>
+                        <h4>Cita:</h4>
+                        <i>Guerrero, A. C. (2015, July 20). Ciclo de vida de un sistema de información • gestiopolis. Gestiopolis. https://www.gestiopolis.com/ciclo-de-vida-de-un-sistema-de-informacion/</i>
+
+                </article>
+            </section>     
+       </main>
+
+       <footer>
+            <p>ITESM | Tec de Monterrey | Campus Qro.</p>
+            <p>TC2005B | Construccion de software y toma de decisiones</p>
+            
+       </footer>
+    </body>
+</html>
