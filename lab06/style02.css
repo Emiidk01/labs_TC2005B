@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #3498db; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    font-size: 24px; /* Tamaño grande de texto */
+    padding: 20px 0; /* Espaciado interno */
+    font-family: Arial, sans-serif; /* Fuente sans-serif */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada sans-serif */
+    background-image:url(pacman.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor  {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #b5daf3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.item {
+    margin-bottom: 40px;
+
+}
+.item label {
+    font-weight: bold;
+    font-size: small;
+
+}
+.item input {
+    width: 50px;
+}
+
+.item img {
+    width: 200px; /* Tamaño de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+
+}
+
+
+

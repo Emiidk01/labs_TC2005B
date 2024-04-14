@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos</title>
+    <link rel="stylesheet" href="style02.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de videjuegos</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="item">
+                <img src="spiderman2.jpg" alt="Spider-Man">
+                <br>
+                <label for="item1">($45 por unidad)</label>
+                <input type="number" id="item1" value="0" min="0">
+                <br>
+            </div>
+            <div class="item">
+                <img src="starwars.jpg" alt="Star Wars">
+                <br>
+                <label for="item2">($50 por unidad)</label>
+                <input type="number" id="item2" value="0" min="0">
+            </div>
+            <div class="item">
+                <img src="hogwarts.jpg" alt="Hogwarts Legacy">
+                <br>
+                <label for="item3">($30 por unidad)</label>
+                <input type="number" id="item3" value="0" min="0">
+            </div>
+        
+            <div id="subtotal">
+                <p>Subtotal: $<span id="cantSubtotal">0.00</span></p>
+            </div>
+            <hr>
+            <div id="iva">
+                <p>IVA (16 %): $<span id="cantIva">0.00</span></p>
+            </div>
+            <hr>
+            <div id="total">
+                <p>Total: $<span id="cantTotal">0.00</span></p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script02.js"></script>
+</html>
