@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Acceso Basado en Roles</title>
+</head>
+<body>
+    <h2>Sistemas que Aplican RBAC</h2>
+    <ol>
+        <li><strong>Microsoft Active Directory (AD):</strong> AD es un servicio de directorio utilizado principalmente en entornos empresariales para administrar identidades y permisos de usuarios. Implementa un enfoque basado en roles para gestionar el acceso a recursos de red y aplicaciones.</li>
+        <li><strong>Sistema de Gestión de Identidades y Accesos (IAM) en la Nube:</strong> Muchos proveedores de servicios en la nube ofrecen soluciones IAM que incluyen funcionalidades de RBAC para controlar el acceso a recursos en la nube. Ejemplos incluyen AWS IAM, Azure IAM y Google Cloud IAM.</li>
+    </ol>
+    
+    <h2>Análisis de Ventajas y Desventajas de RBAC</h2>
+    <h3>Ventajas:</h3>
+    <ul>
+        <li><strong>Centralización:</strong> Permite la gestión centralizada de permisos y roles, lo que facilita la administración de la seguridad del sistema.</li>
+        <li><strong>Escalabilidad:</strong> Es escalable y adecuado para entornos con grandes números de usuarios y recursos.</li>
+        <li><strong>Reducción de Errores:</strong> Reduce la posibilidad de errores y violaciones de seguridad al simplificar la asignación de permisos basada en roles predefinidos.</li>
+        <li><strong>Auditoría y Cumplimiento:</strong> Facilita la auditoría y el cumplimiento de regulaciones al proporcionar un registro de quién tiene acceso a qué recursos.</li>
+    </ul>
+    
+    <h3>Desventajas:</h3>
+    <ul>
+        <li><strong>Complejidad Inicial:</strong> La implementación inicial puede ser compleja, especialmente en sistemas con múltiples roles y permisos.</li>
+        <li><strong>Posible Sobreprescripción:</strong> Existe el riesgo de asignar roles con permisos excesivos (sobreprescripción), lo que podría comprometer la seguridad si no se administra correctamente.</li>
+        <li><strong>Actualización y Mantenimiento:</strong> Requiere una gestión continua para mantener actualizados los roles y permisos a medida que cambian las necesidades del negocio y la estructura organizativa.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Sistemas que No Aplican RBAC</h2>
+    <ol>
+        <li><strong>Sistemas de Control de Acceso Discrecional (DAC):</strong> En DAC, los propietarios de recursos tienen control discrecional sobre quién puede acceder a sus recursos y qué tipo de acceso se permite. Los sistemas Unix/Linux son un ejemplo de DAC.</li>
+        <li><strong>Sistemas de Control de Acceso Obligatorio (MAC):</strong> En MAC, los permisos de acceso son determinados por políticas establecidas por un administrador y son aplicados de manera obligatoria, sin tener en cuenta la discreción del propietario. Los sistemas SELinux y AppArmor son ejemplos de MAC.</li>
+    </ol>
+    
+    <h2>Análisis de Ventajas y Desventajas de No RBAC</h2>
+    <h3>Ventajas:</h3>
+    <ul>
+        <li><strong>Granularidad de Permisos:</strong> Permite asignar permisos de manera más específica a usuarios individuales, lo que puede ser útil en entornos donde se requiere un alto grado de control sobre el acceso a recursos.</li>
+        <li><strong>Flexibilidad:</strong> Los permisos pueden ser ajustados de forma más flexible según las necesidades específicas de cada usuario o recurso.</li>
+        <li><strong>Independencia de Roles:</strong> No requiere la definición previa de roles, lo que puede ser beneficioso en entornos donde las responsabilidades y permisos varían ampliamente entre usuarios.</li>
+    </ul>
+    
+    <h3>Desventajas:</h3>
+    <ul>
+        <li><strong>Complejidad y Riesgo de Errores:</strong> La gestión de permisos a nivel de usuario puede ser más compleja y propensa a errores que la asignación de roles predefinidos.</li>
+        <li><strong>Dificultad en Auditoría y Cumplimiento:</strong> Puede ser más difícil auditar y demostrar el cumplimiento de regulaciones debido a la falta de una estructura de roles claramente definida.</li>
+        <li><strong>Mayor Riesgo de Violaciones de Seguridad:</strong> La asignación de permisos directamente a usuarios puede aumentar el riesgo de violaciones de seguridad si no se implementan adecuadas medidas de control y supervisión.</li>
+    </ul>
+
+</body>
+</html>
