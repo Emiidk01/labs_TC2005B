@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas SQL y SQL Injection</title>
+</head>
+<body>
+    <h1>Respuestas sobre SQL y SQL Injection</h1>
+
+    <h2>Ventajas de escribir el código SQL únicamente en la capa del modelo:</h2>
+    <ul>
+        <li>Mayor seguridad: Al aislar el SQL en una capa específica, se reduce el riesgo de SQL Injection y otros ataques.</li>
+        <li>Mantenibilidad: Facilita la gestión y mantenimiento del código al separar las preocupaciones.</li>
+        <li>Reusabilidad: Permite reutilizar consultas SQL en diferentes partes de la aplicación.</li>
+        <li>Portabilidad: Facilita la migración a diferentes bases de datos, ya que los cambios se limitan a la capa del modelo.</li>
+    </ul>
+
+    <h2>¿Qué es SQL Injection y cómo se puede prevenir?</h2>
+    <p>SQL Injection es un tipo de ataque informático en el que un intruso inserta código SQL malicioso en las consultas de entrada de una aplicación web. Esto puede permitir al atacante realizar acciones no autorizadas en la base de datos.</p>
+    <p>Para prevenir SQL Injection, es importante seguir buenas prácticas de seguridad, como:</p>
+    <ul>
+        <li>Usar sentencias preparadas o consultas parametrizadas.</li>
+        <li>Validar y sanitizar la entrada de usuario.</li>
+        <li>Limitar los privilegios de la cuenta de base de datos utilizada por la aplicación.</li>
+        <li>Evitar la concatenación de cadenas para construir consultas SQL.</li>
+        <li>Implementar firewalls de aplicaciones web (WAF) y otras medidas de seguridad a nivel de red.</li>
+    </ul>
+
+</body>
+</html>
